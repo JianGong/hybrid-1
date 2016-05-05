@@ -1,0 +1,16 @@
+
+<ion-view view-title="更多">
+    <ion-nav-bar  class="bar-calm"  align-title="center">
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-avatar-left item-divider-android item-icon-right" ng-repeat="item in items" >
+                <img src="{{item.icon}}"/>
+                <h2>{{item.title}}</h2>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
