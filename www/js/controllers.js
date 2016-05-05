@@ -1,7 +1,7 @@
 angular.module('starter.controllers', [])
-.controller('RecommendCtrl',function($scope,ImgList){
+.controller('RecommendCtrl',function($scope,ImgList, $ionicSlideBoxDelegate){
         ImgList.allImg.success(function(img){
-            $scope.imgList=processData(img);
+            $scope.imgList=processData(img.data);
         });
         function processData(list){
             var arr=[];
@@ -10,6 +10,7 @@ angular.module('starter.controllers', [])
             }
             return arr;
         }
+        $ionicSlideBoxDelegate.$getByHandle('Slide').update();
     })
 .controller('InvestmentCtrl',function($scope){
 

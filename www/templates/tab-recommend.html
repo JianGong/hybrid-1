@@ -1,16 +1,35 @@
 <ion-view view-title="Recommend">
-    <ion-content>
-        <ion-slide-box auto-play="true"style="width: 100%;height: 160px;" slide-interval="1500" does-continue="true">
+    <ion-content style="background-color:#d0cece; ">
+        <ion-slide-box auto-play="true" style="width: 100%;height: 160px;" slide-interval="1500" does-continue="true">
             <ion-slide>
-                <div class="box blue" style="width: 100%;height: 160px;background-color: blue;"><h1>BLUE</h1></div>
+                <img src="{{imgList[0]}}" style="width: 100%;height: 160px;"/>
             </ion-slide>
             <ion-slide>
-                <div class="box yellow" style="width: 100%;height: 160px;background-color: yellow;"><h1>YELLOW</h1></div>
+                <img src="{{imgList[1]}}" style="width: 100%;height: 160px;"/>
             </ion-slide>
             <ion-slide>
-                <div class="box pink" style="width: 100%;height: 160px;background-color: pink;"><h1>PINK</h1></div>
+                <img src="{{imgList[2]}}" style="width: 100%;height: 160px;"/>
             </ion-slide>
         </ion-slide-box>
-        {{imgList}}
+        <div class="row" style="background-image:url('img/ll_recom_bg.png');">
+            <div class="col col-center col-33" ng-click="" style="text-align: center"><h5>我要借款</h5><img src="img/iv_recom_wyjk.png" style="width: 60px;height: 60px"></div>
+            <div class="col col-center col-33 " ng-click="" style="text-align: center"><h5>帮助中心</h5><img src="img/iv_recom_bzzx.png" style="width: 60px;height: 60px"></div>
+            <div class="col col-center col-33 " ng-click="" style="text-align: center"><h5>债权转让项目</h5><img src="img/iv_recom_zrxm.png" style="width: 60px;height: 60px"></div>
+        </div>
+        <div style="width:100%;height: 30px;">
+            <img src="img/iv_recom_title_icon.png" style="width: 6px;height:24px;margin-top: 3px;margin-left: 8px;">
+               <h4 style="display: inline;">理财精选</h4>
+        </div>
+        <div style="width: 100%;text-align: center;background-image:url('img/ll_recom_bg.png');">
+            <h2 style="">安e盈系列产品</h2>
+            <div style="margin-top: 8px">
+                <h1 style="display: inline;color:#ff6600; ">10</h1><h2 style="display: inline;color:#ff6600;">%</h2><h3 style="display: inline">最高年化收益</h3>
+            </div>
+            <div class="row" >
+                <div class="col col-center col-50" ng-click="" style="text-align: center"><h5>起投金额(元)</h5><h5>5000元</h5></div>
+                <div class="col col-center col-50 " ng-click="" style="text-align: center"><h5>投资期限(月)</h5><h5>12月</h5></h5></div>
+
+            </div>
+        </div>
     </ion-content>
 </ion-view>
